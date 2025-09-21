@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR EMPRESA MVM VARIEDADES</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #005c97;
+            --secondary-color: #363795;
+            --accent-color: #ff7e00;
+        }
+        
+        .bg-primary-custom {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-custom:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-section {
+            padding: 120px 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000"><rect fill="%23005c97" width="2000" height="2000"/><path fill="%23363795" d="M0 0L2000 2000M2000 0L0 2000" stroke="%23005c97" stroke-width="2"/></svg>') center/cover;
+            color: white;
+            text-align: center;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .icon-container i {
+            font-size: 30px;
+            color: white;
+        }
+        
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        
+        .social-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cpu"></i> VR MVM VARIEDADES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-light">Portal VR</a>
+                    <a href="#" class="btn btn-outline-light">Estabelecimento VR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Soluções em Tecnologia e Eletrônicos</h1>
+            <p class="lead mb-5">Especializada em comércio e manutenção de produtos eletrônicos, oferecendo qualidade e confiança para seus equipamentos.</p>
+            <a href="#servicos" class="btn btn-warning btn-lg cta-button">Nossos Serviços</a>
+            <a href="#contato" class="btn btn-outline-light btn-lg cta-button">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="sobre">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Sobre a <span class="highlight">VR EMPRESA MVM VARIEDADES</span></h2>
+                    <p class="lead">Desde 2020, oferecendo soluções completas em tecnologia e eletrônicos para clientes em Carapicuíba e região.</p>
+                    <p>Somos uma microempresa especializada no comércio varejista de equipamentos e suprimentos de informática, além de serviços especializados de manutenção em produtos eletrônicos.</p>
+                    <p>Nossa missão é proporcionar aos clientes produtos de qualidade e serviços especializados, com agilidade e preços justos.</p>
+                    <a href="#" class="btn btn-primary-custom mt-3">VR Empresa</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='300' viewBox='0 0 500 300'><rect width='500' height='300' fill='%23f8f9fa'/><circle cx='150' cy='150' r='100' fill='%23005c97' opacity='0.2'/><circle cx='350' cy='150' r='80' fill='%23363795' opacity='0.2'/><text x='250' y='150' font-family='Arial' font-size='24' fill='%23005c97' text-anchor='middle'>VR MVM VARIEDADES</text></svg>" class="img-fluid rounded" alt="Sobre a empresa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light" id="servicos">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossos <span class="highlight">Serviços</span></h2>
+                <p class="lead">Oferecemos soluções completas para suas necessidades tecnológicas</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h4 class="card-title">Manutenção de Eletrônicos</h4>
+                            <p class="card-text">Conserto e manutenção de diversos equipamentos eletrônicos com técnicos especializados e peças de qualidade.</p>
+                            <a href="#" class="btn btn-primary-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container">
+                                <i class="bi bi-cart"></i>
+                            </div>
+                            <h4 class="card-title">Venda de Equipamentos</h4>
+                            <p class="card-text">Comércio de equipamentos e suprimentos de informática, com variedade de produtos e marcas reconhecidas.</p>
+                            <a href="#" class="btn btn-primary-custom">Ver Produtos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <h4 class="card-title">Suporte Técnico</h4>
+                            <p class="card-text">Assistência técnica especializada e consultoria para ajudar você a escolher o melhor equipamento para suas necessidades.</p>
+                            <a href="#" class="btn btn-primary-custom">Solicitar Suporte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary-custom text-white">
+        <div class="container py-5 text-center">
+            <h2 class="fw-bold mb-4">Precisa de ajuda com seus equipamentos eletrônicos?</h2>
+            <p class="lead mb-5">Entre em contato conosco e receba um atendimento personalizado</p>
+            <a href="#" class="btn btn-light btn-lg cta-button">Portal VR</a>
+            <a href="#" class="btn btn-outline-light btn-lg cta-button">Estabelecimento VR</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contato">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Entre em <span class="highlight">Contato</span></h2>
+                <p class="lead">Estamos à disposição para melhor atendê-lo</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Informações de Contato</h4>
+                            <p><i class="bi bi-geo-alt-fill me-2"></i> <strong>Endereço:</strong> Estrada Fazendinha, 1361 – apto 164B, bloco B, andar 16 – Jardim Ana Estela, Carapicuíba/SP</p>
+                            <p><i class="bi bi-telephone-fill me-2"></i> <strong>Telefone:</strong> (11) 9XXXX-XXXX</p>
+                            <p><i class="bi bi-envelope-fill me-2"></i> <strong>Email:</strong> contato@vrmvmvariedades.com.br</p>
+                            <p><i class="bi bi-clock-fill me-2"></i> <strong>Horário de Funcionamento:</strong> Segunda a Sexta, 9h às 18h | Sábado, 9h às 13h</p>
+                            <hr>
+                            <h5 class="mt-4">Nossas Redes Sociais</h5>
+                            <div class="mt-3">
+                                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Envie uma Mensagem</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>VR EMPRESA MVM VARIEDADES</h5>
+                    <p>Especializada em comércio e manutenção de produtos eletrônicos.</p>
+                    <p>CNPJ: 39.398.503/0001-00</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Início</a></li>
+                        <li><a href="#sobre" class="text-white">Sobre</a></li>
+                        <li><a href="#servicos" class="text-white">Serviços</a></li>
+                        <li><a href="#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Atendimento</h5>
+                    <p>Segunda a Sexta: 9h às 18h</p>
+                    <p>Sábado: 9h às 13h</p>
+                    <a href="#" class="btn btn-outline-light mt-2">VR Empresa</a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 VR EMPRESA MVM VARIEDADES - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
